@@ -69,3 +69,7 @@ dump.rdb
 # Ignore precompiled assets
 # Heroku or Capistrano can and should regenerate them on every deploy
 public/assets
+deploy_to_staging.sh
+staging_console.sh
+dev_env_settings.sh
+staging_log.sh
