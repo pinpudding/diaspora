@@ -300,14 +300,14 @@ configuration: ## Section
     ## OAuth credentials for Facebook:
     facebook: ## Section
       enable: true
-      app_id: AppConfig['facebook_app_id']
-      secret: AppConfig['facebook_app_secret']
+      #app_id: AppConfig['facebook_app_id']
+      #secret: AppConfig['facebook_app_secret']
     
     ## OAuth credentials for Twitter:
     twitter: ## Section
       enable: true 
-      app_id: AppConfig['twitter_app_id']
-      secret: AppConfig['twitter_app_secret']
+      #app_id: AppConfig['twitter_app_id']
+      #secret: AppConfig['twitter_app_secret']
     
     ## OAuth credentials for Tumblr
     tumblr: ## Section
