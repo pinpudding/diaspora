@@ -245,7 +245,7 @@ configuration: ## Section
     enable: true
     
     ## Sender address used in mail send by Diaspora
-    sender_address: ENV['ADMIN_NOTIFICATION_EMAIL']
+    #sender_address: ENV['ADMIN_NOTIFICATION_EMAIL']
     
     ## This selects which mailer should be used. Take 'smtp' for a smtp
     ## connection, 'sendmail' to use the sendmail binary or
@@ -258,14 +258,14 @@ configuration: ## Section
       ## This should match the common name of the certificate
       ## the SMTP server sends. If he sends one.
       host: 'smtp.sendgrid.net'
-      port: 587
-      username: ENV['SENDGRID_USERNAME']
-      password: ENV['SENDGRID_PASSWORD']
+      #port: 587
+      #username: ENV['SENDGRID_USERNAME']
+      #password: ENV['SENDGRID_PASSWORD']
       
       ## Authentication required to send mail. Use one of 'plain',
       ## 'login' or 'cram_md5'. Use 'none' if server does not support
       ## authentication
-      authentication: 'plain'
+      #authentication: 'plain'
       
       ## Credentials to log in to the SMTP server - may be necessary if
       ## authentication is not 'none'
