@@ -2,6 +2,24 @@
 
 ## Refactor
 
+* Refactored config/ directory [#4145](https://github.com/diaspora/diaspora/pull/4145).
+
+## Bug fixes
+
+* Don't use Pathname early to circumvent some rare initialization errors [#3816](https://github.com/diaspora/diaspora/issues/3816)
+* Don't error out in script/server if git is unavailable.
+
+## Features
+
+# 0.1.0.1
+
+* Regression fix: 500 for deleted reshares introduced by the locator
+* Federate locations
+
+# 0.1.0.0
+
+## Refactor
+
 ### Replaced Resque with Sidekiq - Migration guide - [#3993](https://github.com/diaspora/diaspora/pull/3993)
 
 We replaced our queue system with Sidekiq. You might know that Resque needs Redis.
