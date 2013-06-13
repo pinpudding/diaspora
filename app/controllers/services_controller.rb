@@ -8,7 +8,7 @@ class ServicesController < ApplicationController
   # See also http://www.communityguides.eu/articles/16
   skip_before_filter :verify_authenticity_token, :only => :create
 
-  before_filter :authenticate_user!
+  before_filter :authenticate_user!,:except=>[:create]
 
   respond_to :html
   respond_to :json, :only => :inviter
@@ -19,34 +19,61 @@ class ServicesController < ApplicationController
 
   def create
     auth = request.env['omniauth.auth']
+    puts("*********** "<<auth.to_s)
+
 
     toke = auth['credentials']['token']
     secret = auth['credentials']['secret']
-
     provider = auth['provider']
     user     = auth['info']
 
-    service = "Services::#{provider.camelize}".constantize.new(:nickname => user['nickname'],
+    if !current_user
+      begin
+        cuser="Services::#{provider.camelize}".constantize.where(:uid=>auth['uid']).first.user
+      rescue
+        #raise('error')
+        pass=('0'..'z').to_a.shuffle.first(8).join
+        cuser = User.build(:email=>user['nickname']+'@emphit.com',
+                          :password=>pass,:confirm_password=>pass,
+                          :username=>user['nickname'],:language=>I18n.locale.to_s)
+      
+      end     
+      current_user=cuser
+    end
+    puts('********* USER ID'<<current_user.id.to_s)
+  
+
+    service = "Services::#{provider.camelize}".constantize.where(:nickname => user['nickname'],
+                                                               :access_token => toke,
+                                                               :access_secret => secret,
+                                                               :uid => auth['uid']).first
+
+    if service.nil?
+    service = "Services::#{provider.camelize}".constantize.new(:user=>current_user,:nickname => user['nickname'],
                                                                :access_token => toke,
                                                                :access_secret => secret,
                                                                :uid => auth['uid'])
+    service.save!
+    end
+    
+    
     current_user.services << service
 
-    if service.persisted?
+    if service
       fetch_photo = current_user.profile[:image_url].blank?
-
       current_user.update_profile(current_user.profile.from_omniauth_hash(user))
       Workers::FetchProfilePhoto.perform_async(current_user.id, service.id, user["image"]) if fetch_photo
-
       flash[:notice] = I18n.t 'services.create.success'
+      sign_in_and_redirect(current_user)
+      #redirect_to 'bookmarklet'
+      return
     else
       flash[:error] = I18n.t 'services.create.failure'
-
-      if existing_service = Service.where(:type => service.type.to_s, :uid => service.uid).first
-        flash[:error] <<  I18n.t('services.create.already_authorized',
-                                 :diaspora_id => existing_service.user.profile.diaspora_handle,
-                                 :service_name => provider.camelize )
-      end
+      #if existing_service = Service.where(:type => service.type.to_s, :uid => service.uid).first
+      #  flash[:error] <<  I18n.t('services.create.already_authorized',
+      #                           :diaspora_id => existing_service.user.profile.diaspora_handle,
+      #                           :service_name => provider.camelize )
+      #end
     end
     
     if request.env['omniauth.origin'].nil?

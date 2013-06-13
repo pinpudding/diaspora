@@ -6,7 +6,7 @@
   <h1 id="huge-text">
     <%= AppConfig.settings.pod_name %>
   </h1>
-
+<%if false%>
   <%= form_for(resource, :as => resource_name, :url => session_path(resource_name), :html => {:class => "form-horizontal block-form"}, :autocomplete => 'off') do |f| %>
         <fieldset>
           <div class="control-group">
@@ -45,4 +45,16 @@
       <br/>
       <%= link_to t('devise.shared.links.sign_up'), new_registration_path(resource_name) %>
   <% end %>
+  <%end%>
+
+  <%=link_to 'twitter','/auth/twitter'%>
+
+
+
+
+
+
+
+
+
 </div>

@@ -214,11 +214,7 @@ GEM
     mobile-fu (1.2.1)
       rack-mobile-detect
       rails
-<<<<<<< HEAD
-    multi_json (1.7.3)
-=======
     multi_json (1.7.6)
->>>>>>> d07073cf8e48d93e0183919a6e2d2ca048b71c8d
     multipart-post (1.2.0)
     nested_form (0.3.2)
     net-scp (1.1.1)
@@ -346,11 +342,7 @@ GEM
     ruby-oembed (0.8.8)
     ruby-progressbar (1.1.1)
     rubyzip (0.9.9)
-<<<<<<< HEAD
-    safe_yaml (0.9.1)
-=======
     safe_yaml (0.9.3)
->>>>>>> d07073cf8e48d93e0183919a6e2d2ca048b71c8d
     sass (3.2.9)
     sass-rails (3.2.6)
       railties (~> 3.2.0)
@@ -456,25 +448,15 @@ DEPENDENCIES
   json (= 1.8.0)
   markerb (= 1.0.1)
   messagebus_ruby_api (= 1.0.3)
-<<<<<<< HEAD
-  mini_magick (= 3.5)
-  mobile-fu (= 1.1.1)
-=======
   mini_magick (= 3.6.0)
   mobile-fu (= 1.2.1)
-  mysql2 (= 0.3.11)
->>>>>>> d07073cf8e48d93e0183919a6e2d2ca048b71c8d
   nokogiri (= 1.5.9)
   omniauth (= 1.1.4)
   omniauth-facebook (= 1.4.1)
   omniauth-tumblr (= 1.1)
   omniauth-twitter (= 0.0.16)
-<<<<<<< HEAD
   pg (= 0.15.1)
-  rack-cors (= 0.2.7)
-=======
   rack-cors (= 0.2.8)
->>>>>>> d07073cf8e48d93e0183919a6e2d2ca048b71c8d
   rack-google-analytics (= 0.11.0)
   rack-piwik (= 0.2.2)
   rack-protection (= 1.2)
