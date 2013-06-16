@@ -230,7 +230,7 @@ eo:
   bookmarklet:
     explanation: "Vi povas afiŝi en DIASPORA* de ĉie ajn per paĝosigno montranta al %{link}."
     heading: "Legosigneto"
-    post_something: "Afiŝi ion en DIASPORA*"
+    post_something: "Afiŝi ion en Twitter"
     post_success: "Afiŝita! Fermanta!"
   cancel: "Rezigni"
   comments:

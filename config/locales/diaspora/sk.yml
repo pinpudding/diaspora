@@ -246,7 +246,7 @@ sk:
   bookmarklet:
     explanation: "Príspevky na Diasporu môžeš písať z hocikiaľ cez záložku s týmto odkazom => %{link}."
     heading: "Bookmarklet"
-    post_something: "Posielanie na Diasporu"
+    post_something: "Posielanie na Twitter"
     post_success: "Odoslané! Zatvára sa!"
   cancel: "Zrušiť"
   comments:

@@ -231,7 +231,7 @@ zh-CN:
   bookmarklet:
     explanation: "收藏<a href='%{link}'>这个链接</a>，即可随时发布新内容"
     heading: "Diaspora 收藏夹"
-    post_something: "发布新内容到 Diaspora"
+    post_something: "发布新内容到 Twitter"
     post_success: "发布完成！关闭中。"
   cancel: "取消"
   comments:

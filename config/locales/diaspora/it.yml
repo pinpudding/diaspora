@@ -239,7 +239,7 @@ it:
   bookmarklet:
     explanation: "Condividi su Diaspora quando vuoi aggiungendo %{link} tra i preferiti."
     heading: "Bookmarklet"
-    post_something: "Pubblica su Diaspora"
+    post_something: "Pubblica su Twitter"
     post_success: "Inviato! Chiusura in corso!"
   cancel: "Annulla"
   comments:

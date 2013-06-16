@@ -276,7 +276,7 @@ sq:
   bookmarklet:
     heading: "Zbatimth Faqerojtës"
     post_success: "U postua! Po mbyllet!"
-    post_something: "Postoni te Diaspora"
+    post_something: "Postoni te Twitter"
     explanation: "Postoni te Diaspora prej kudo qofshi, duke faqeruajtur këtë lidhje => %{link}."
 
   comments:

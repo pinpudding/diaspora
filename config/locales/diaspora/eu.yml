@@ -237,7 +237,7 @@ eu:
   bookmarklet:
     explanation: "Partekatu zerbait Diasporan laster-markatara gehituz esteka hau => %{link}."
     heading: "Bookmarkleta"
-    post_something: "Partekatu zerbait Diasporan"
+    post_something: "Partekatu zerbait Twitter"
     post_success: "Bidalia! Irteten!"
   cancel: "Ezeztatu"
   comments:

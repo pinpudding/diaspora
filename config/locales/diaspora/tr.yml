@@ -206,7 +206,7 @@ tr:
   bookmarklet:
     explanation: "Diaspora'ya istediğin her yerden gönderi yapmak için %{link} yer imleri çubuğuna sürükle."
     heading: "Diaspora yer işareti"
-    post_something: "Diaspora için bir şey gönder"
+    post_something: "Twitter için bir şey gönder"
     post_success: "Gönderildi! Kapatılıyor!"
   cancel: "İptal Et"
   comments:

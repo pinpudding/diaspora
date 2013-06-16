@@ -239,7 +239,7 @@ de:
   bookmarklet:
     explanation: "Erstelle von überall einen Beitrag in Diaspora, indem du %{link} als Lesezeichen speicherst."
     heading: "Lesezeichen"
-    post_something: "Erstelle einen Beitrag in Diaspora"
+    post_something: "Erstelle einen Beitrag in Twitter"
     post_success: "Erstellt! Schließen …"
   cancel: "Abbrechen"
   comments:

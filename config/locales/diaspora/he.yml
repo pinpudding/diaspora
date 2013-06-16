@@ -237,7 +237,7 @@ he:
   bookmarklet:
     explanation: "פרסום ישירות לדיאספורה מכל מקום על ידי הוספת %{link} לסימניות."
     heading: "סימנייה"
-    post_something: "פרסום משהו לתוך דיאספורה"
+    post_something: "פרסום משהו לטוויטר"
     post_success: "פורסם! נסגר!"
   cancel: "ביטול"
   comments:

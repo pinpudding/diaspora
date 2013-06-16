@@ -172,7 +172,7 @@ bg:
       success: "Какво ли ще кажат! #sayhello"
   bookmarklet:
     explanation: "Публикувайте в Diaspora от където и да е, запаметявайки %{link} като отметка."
-    post_something: "Публикуване в Diaspora"
+    post_something: "Публикуване в Twitter"
     post_success: "Публикувано!"
   cancel: "Отказ"
   comments:

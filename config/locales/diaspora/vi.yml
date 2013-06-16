@@ -222,7 +222,7 @@ vi:
   bookmarklet:
     explanation: "Đăng tin lên Diaspora từ bất kì đâu bằng cách đánh dấu %{link}."
     heading: "Đánh dấu"
-    post_something: "Đăng tin lên Diaspora"
+    post_something: "Đăng tin lên Twitter"
     post_success: "Đã đăng bài! Đang đóng!"
   cancel: "Hủy bỏ"
   comments:

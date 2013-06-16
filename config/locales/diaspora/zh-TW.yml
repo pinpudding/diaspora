@@ -230,7 +230,7 @@ zh-TW:
   bookmarklet:
     explanation: "把這個可以貼任何網頁到 Diaspora 的連結加入書籤 => %{link}."
     heading: "書籤小程式"
-    post_something: "貼到 Diaspora"
+    post_something: "貼到 Twitter"
     post_success: "貼好了! 關掉中!"
   cancel: "取消"
   comments:

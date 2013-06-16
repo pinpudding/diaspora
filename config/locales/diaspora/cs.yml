@@ -210,7 +210,7 @@ cs:
       success: "Tak ať tedy řekne, co má na srdci!  #pozdrav"
   bookmarklet:
     explanation: "Pište na Diasporu odkudkoliv pomocí %{link}."
-    post_something: "Sdílet na Diaspoře"
+    post_something: "Sdílet na Twitter"
     post_success: "Odesláno! Zavírám!"
   cancel: "Zrušit"
   comments:

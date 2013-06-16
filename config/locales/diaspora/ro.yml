@@ -164,7 +164,7 @@ ro:
   bookmarklet:
     explanation: "%{link} from anywhere by bookmarking this link."
     heading: "Diaspora Bookmarklet"
-    post_something: "Publicati ceva catre Diaspora"
+    post_something: "Publicati ceva catre Twitter"
     post_success: "Publicat! Inchidere!"
   cancel: "Anulează"
   comments:

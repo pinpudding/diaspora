@@ -241,7 +241,7 @@ fr:
   bookmarklet:
     explanation: "Publiez sur Diaspora depuis n'importe où en ajoutant %{link} à vos marque-pages."
     heading: "Bookmarklet"
-    post_something: "Publiez sur Diaspora"
+    post_something: "Publiez sur Twitter"
     post_success: "Publié ! Fermeture !"
   cancel: "Annuler"
   comments:

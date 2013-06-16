@@ -241,7 +241,7 @@ es-MX:
   bookmarklet:
     explanation: "Publica en Diaspora desde cualquier lugar, agregando a tus marcadores este enlace => %{link}."
     heading: "Marcador"
-    post_something: "Publica en Diaspora"
+    post_something: "Publica en Twitter"
     post_success: "¡Publicado! ¡Cerrando!"
   cancel: "Cancelar"
   comments:

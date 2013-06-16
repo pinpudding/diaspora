@@ -240,7 +240,7 @@ nb:
   bookmarklet:
     explanation: "%{link} fra hvor som helst ved å bokmerke denne linken."
     heading: "Diaspora Bookmarklet"
-    post_something: "Post noe på Diaspora"
+    post_something: "Post noe på Twitter"
     post_success: "Postet! Lukker!"
   cancel: "Avbryt"
   comments:

@@ -187,7 +187,7 @@ es-CL:
   bookmarklet:
     explanation: "%{link} donde sea agregando a marcadores este link."
     heading: "Diaspora en tus marcadores"
-    post_something: "Postea algo en Diaspora"
+    post_something: "Postea algo en Titter"
     post_success: "Posteado! Cerrando!"
   cancel: "Cancelar"
   comments:

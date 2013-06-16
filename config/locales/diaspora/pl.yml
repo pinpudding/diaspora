@@ -246,7 +246,7 @@ pl:
   bookmarklet:
     explanation: "Publikuj w Diasporze z dowolnego miejsca, dodając ten link do zakładek => %{link}"
     heading: "Bookmarklet"
-    post_something: "Opublikuj w Diasporze"
+    post_something: "Opublikuj w Twitter"
     post_success: "Wpis został opublikowany! Okno zostanie zamknięte!"
   cancel: "Anuluj"
   comments:

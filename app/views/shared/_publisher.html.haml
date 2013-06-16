@@ -25,13 +25,13 @@
             - else
               = status.text_area :fake_text, :rows => 2, :value => h(publisher_formatted_text), :tabindex => 1, :placeholder => "#{t('contacts.index.start_a_conversation')}..."
             = status.hidden_field :text, :value => h(publisher_hidden_text), :class => 'clear_on_submit'
-
-            #publisher-images
-              #locator.btn{:title => t('.get_location')}
-                = image_tag 'icons/marker.png', :alt => t('.get_location').titleize, :class => 'publisher_image'
-              #file-upload.btn{:title => t('.upload_photos')}
-                = image_tag 'icons/camera.png', :alt => t('.upload_photos').titleize, :class => 'publisher_image'
-            = hidden_field :location, :coords
+            - if false
+              #publisher-images
+                #locator.btn{:title => t('.get_location')}
+                  = image_tag 'icons/marker.png', :alt => t('.get_location').titleize, :class => 'publisher_image'
+                #file-upload.btn{:title => t('.upload_photos')}
+                  = image_tag 'icons/camera.png', :alt => t('.upload_photos').titleize, :class => 'publisher_image'
+              = hidden_field :location, :coords
 
       - if publisher_public
         = hidden_field_tag 'aspect_ids[]', "public"
@@ -53,19 +53,19 @@
                               :maxchar => "#{service.class::MAX_CHARACTERS}",
                               :data  => {:toggle=>'tooltip', :placement=>'bottom'}
             %a{ :href => "#question_mark_pane", :class => 'question_mark', :rel => 'facebox', :title => t('shared.public_explain.manage') }
-              .icons-monotone_wrench_settings
-
-          .dropdown{ ! current_user.getting_started? ? {:class => "hang_right"} : { :class => "hang_right", :title => popover_with_close_html("2. #{t('shared.public_explain.control_your_audience')}"), 'data-content'=> t('shared.public_explain.visibility_dropdown')} }
-            .button.toggle.publisher
-              - if publisher_public
-                = t('public')
-              - elsif all_aspects_selected?(selected_aspects)
-                = t('all_aspects')
-              - elsif selected_aspects.size == 1
-                = selected_aspects.first.name
-              - else
-                = t('shared.aspect_dropdown.toggle', :count => selected_aspects.size)
-              &#9660;
+              -#.icons-monotone_wrench_settings
+          -if false
+            .dropdown{ ! current_user.getting_started? ? {:class => "hang_right"} : { :class => "hang_right", :title => popover_with_close_html("2. #{t('shared.public_explain.control_your_audience')}"), 'data-content'=> t('shared.public_explain.visibility_dropdown')} }
+              .button.toggle.publisher
+                - if publisher_public
+                  = t('public')
+                - elsif all_aspects_selected?(selected_aspects)
+                  = t('all_aspects')
+                - elsif selected_aspects.size == 1
+                  = selected_aspects.first.name
+                - else
+                  = t('shared.aspect_dropdown.toggle', :count => selected_aspects.size)
+                &#9660;
 
             .wrapper
               %ul.dropdown_list{:unSelectable => 'on', 'data-person_id' => (person.id if defined?(person) && person), 'data-service_uid' => (service_uid if defined?(service_uid))}
@@ -91,4 +91,9 @@
 
     #publisher_photo_upload
       = render 'photos/new_photo', :aspect_ids => aspect_ids.join(',')
-
+:javascript
+  $(document).ready(function(){
+    alert('here')
+    $('.service_icon').toggleService();
+    //$('.service_icon').disable();
+  });

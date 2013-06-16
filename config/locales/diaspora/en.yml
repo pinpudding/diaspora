@@ -269,7 +269,7 @@ en:
   bookmarklet:
     heading: "Bookmarklet"
     post_success: "Posted! Closing!"
-    post_something: "Post to Emphit"
+    post_something: "Post to Twitter"
     explanation: "Post to Emphit from anywhere by bookmarking this link => %{link}."
 
   comments:

@@ -168,7 +168,7 @@ lt:
   bookmarklet:
     explanation: "Paskelbkite tinkle Diaspora %{link} paspausdami šią nuorodą => %{link}"
     heading: "Diaspora žymelės"
-    post_something: "Paskelbti Diaspora"
+    post_something: "Paskelbti Twitter"
     post_success: "Įrašas išsiųstas!"
   cancel: "Atšaukti"
   comments:

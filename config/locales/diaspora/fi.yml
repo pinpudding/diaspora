@@ -220,7 +220,7 @@ fi:
   bookmarklet:
     explanation: "Voit lähettää viestin Diasporaan mistä tahansa lisäämällä tämän linkin kirjanmerkkeihisi: %{link}"
     heading: "Sovelluskirjanmerkki"
-    post_something: "Lähetä viesti Diasporaan"
+    post_something: "Lähetä viesti Twitter"
     post_success: "Lähetetty! Suljetaan!"
   cancel: "Peruuta"
   comments:

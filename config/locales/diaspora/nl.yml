@@ -232,7 +232,7 @@ nl:
   bookmarklet:
     explanation: "Post vanaf overal naar Diaspora door %{link} op te slaan."
     heading: "Bookmarktlet"
-    post_something: "Plaats iets op Diaspora"
+    post_something: "Plaats iets op Twitter"
     post_success: "Gepost!"
   cancel: "Annuleren"
   comments:

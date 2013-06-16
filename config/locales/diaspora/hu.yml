@@ -235,7 +235,7 @@ hu:
   bookmarklet:
     explanation: "Küldj bejegyzést a Diaspora-ra bárhonnan, csak mentsd el könyvjelzőként a következő hivatkozást => %{link}."
     heading: "Könyvjelző"
-    post_something: "Üzenj a Diasporára"
+    post_something: "Üzenj a Twitter"
     post_success: "Elküldve! Bezárás!"
   cancel: "Mégsem"
   comments:

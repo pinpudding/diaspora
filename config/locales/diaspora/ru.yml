@@ -249,7 +249,7 @@ ru:
   bookmarklet:
     explanation: "Пишите в Диаспору с любой страницы с помощью этой закладки: %{link}."
     heading: "Букмарклет Диаспоры"
-    post_something: "Отправить в Диаспору"
+    post_something: "Отправить в Twitter"
     post_success: "Опубликовано! Закрытие!"
   cancel: "Отменить"
   comments:

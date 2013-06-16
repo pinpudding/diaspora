@@ -240,7 +240,7 @@ pt-BR:
   bookmarklet:
     explanation: "Publique em Diaspora de qualquer lugar favoritando este link => %{link}."
     heading: "Favoritos"
-    post_something: "Publicar em Diaspora"
+    post_something: "Publicar em Twitter"
     post_success: "Postado! Fechado!"
   cancel: "Cancelar"
   comments:

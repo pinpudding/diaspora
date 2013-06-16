@@ -179,7 +179,7 @@ de_formal:
   bookmarklet:
     explanation: "Erstellen Sie einen Beitrag in Diaspora von überall, in dem Sie %{link} als Lesezeichen speichern."
     heading: "Lesezeichen"
-    post_something: "Erstellen Sie einen Beitrag in Diaspora"
+    post_something: "Erstellen Sie einen Beitrag in Twitter"
     post_success: "Erstellt! Schließen …"
   cancel: "Abbrechen"
   comments:

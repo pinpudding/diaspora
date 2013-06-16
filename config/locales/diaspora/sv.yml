@@ -241,7 +241,7 @@ sv:
   bookmarklet:
     explanation: "Bokmärk %{link} för att kunna göra inlägg på Diaspora varifrån som helst."
     heading: "Bookmarklet"
-    post_something: "Skicka till Diaspora"
+    post_something: "Skicka till Twitter"
     post_success: "Skickat! Stänger!"
   cancel: "Avbryt"
   comments:

@@ -243,7 +243,7 @@ uk:
   bookmarklet:
     explanation: "Пишіть з будь-якої сторінки, використовуючи %{link}."
     heading: "Інтерактивна закладка Діаспори"
-    post_something: "повідомлення до Діаспори"
+    post_something: "повідомлення до Twitter"
     post_success: "Опубліковано! Закриття!"
   cancel: "Скасувати"
   comments:

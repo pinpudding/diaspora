@@ -232,7 +232,7 @@ hy:
       failure: "Չստացվեց դադարեցնել արհամարհել այդ օգտատիրոջը։"
       success: "Եկ տեսնենք՝ ինչ ունեն նրանք ասելու։ #sayhello"
   bookmarklet:
-    post_something: "Գրառել Diaspora-ում"
+    post_something: "Գրառել Twitter-ում"
     post_success: "Գրառվեց։ Փակվում եմ։ ։Ճ"
   cancel: "Չեղարկել"
   comments:

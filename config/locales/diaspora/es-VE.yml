@@ -238,7 +238,7 @@ es-VE:
   bookmarklet:
     explanation: "Publica en Diaspora* desde cualquier sitio agregando a tus marcadores este enlace => %{link}."
     heading: "Marcador"
-    post_something: "Publicar en Diaspora*"
+    post_something: "Publicar en Twitter"
     post_success: "¡Publicado! ¡Cerrando!"
   cancel: "Cancelar"
   comments:

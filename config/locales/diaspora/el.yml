@@ -240,7 +240,7 @@ el:
   bookmarklet:
     explanation: "Αναρτήστε στο Diaspora από οπουδήποτε, σύρετε αυτό τον σύνδεσμο στα αγαπημένα => %{link}."
     heading: "Εφαρμογή σελιδοδείκτη"
-    post_something: "Αναρτήστε στο Diaspora"
+    post_something: "Αναρτήστε στο Twitter"
     post_success: "Αναρτήθηκε! Κλείνει!"
   cancel: "Ακύρωση"
   comments:
