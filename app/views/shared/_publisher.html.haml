@@ -93,7 +93,6 @@
       = render 'photos/new_photo', :aspect_ids => aspect_ids.join(',')
 :javascript
   $(document).ready(function(){
-    alert('here')
-    $('.service_icon').toggleService();
-    //$('.service_icon').disable();
+    $('.service_icon').click();
+    $('.service_icon').hide();
   });
