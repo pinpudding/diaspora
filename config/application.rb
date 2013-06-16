@@ -3,6 +3,9 @@ require_relative 'boot'
 require 'rails/all'
 Bundler.require(*Rails.groups(:assets => %w(development test))) if defined?(Bundler)
 
+# Load asset_sync early
+require_relative 'asset_sync'
+
 module Diaspora
   class Application < Rails::Application
     # Settings in config/environments/* take precedence over those specified here.
@@ -50,6 +53,9 @@ module Diaspora
 
     # Enable the asset pipeline
     config.assets.enabled = true
+
+    # Speed up precompile by not loading the environment
+    config.assets.initialize_on_precompile = false
 
     # Precompile additional assets (application.js, application.css, and all non-JS/CSS are already added)
     config.assets.precompile += %w{
