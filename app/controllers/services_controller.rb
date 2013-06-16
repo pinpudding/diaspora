@@ -19,9 +19,6 @@ class ServicesController < ApplicationController
 
   def create
     auth = request.env['omniauth.auth']
-    puts("*********** "<<auth.to_s)
-
-
     toke = auth['credentials']['token']
     secret = auth['credentials']['secret']
     provider = auth['provider']
@@ -36,9 +33,9 @@ class ServicesController < ApplicationController
         cuser = User.build(:email=>user['nickname']+'@emphit.com',
                           :password=>pass,:confirm_password=>pass,
                           :username=>user['nickname'],:language=>I18n.locale.to_s)
-      
+        cuser.save!
       end     
-      current_user=cuser
+      sign_in(cuser)
     end
     puts('********* USER ID'<<current_user.id.to_s)
   
@@ -64,8 +61,8 @@ class ServicesController < ApplicationController
       current_user.update_profile(current_user.profile.from_omniauth_hash(user))
       Workers::FetchProfilePhoto.perform_async(current_user.id, service.id, user["image"]) if fetch_photo
       flash[:notice] = I18n.t 'services.create.success'
-      sign_in_and_redirect(current_user)
-      #redirect_to 'bookmarklet'
+      sign_in(current_user)
+      redirect_to '/bookmarklet'
       return
     else
       flash[:error] = I18n.t 'services.create.failure'

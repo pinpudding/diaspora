@@ -108,7 +108,7 @@ describe ApplicationHelper do
 
   describe '#pod_name' do
     it 'defaults to Diaspora*' do
-      pod_name.should  match /DIASPORA/i
+      pod_name.should  match /EMPHIT/i
     end
 
     it 'displays the supplied pod_name if it is set' do
