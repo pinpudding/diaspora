@@ -21,6 +21,9 @@
 * Replace mentions of out-of-aspect people with markdown links [#4161](https://github.com/diaspora/diaspora/pull/4161)
 * Unify hide and ignore [#3828](https://github.com/diaspora/diaspora/issues/3828)
 * Remove alpha branding [#4196](https://github.com/diaspora/diaspora/issues/4196)
+* Fix dynamic loading of asset_sync
+* Fix login for short passwords [#4123](https://github.com/diaspora/diaspora/issues/4123)
+* Add loading indicator on tag pages, remove the second one from the profile page [#4041](https://github.com/diaspora/diaspora/issues/4041)
 
 ## Features
 
